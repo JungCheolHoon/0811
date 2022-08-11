@@ -38,7 +38,7 @@ public class UtilityClassDemo {
 //		System.out.println(df.format(new Date() )) ;
 //		
 		String pattern = "오늘은 yyyy년 MM월 dd일 입니다.";
-		SimpleDateFormat sdf = new SimpleDateFormat(); 
+		SimpleDateFormat sdf = new SimpleDateFormat(pattern); 
 		System.out.println(sdf.format(new Date()) );
 //		
 		System.out.printf("오늘은 %1$tY년 %1$tm월 %1$td일 입니다.\n",new Date());			//new Date로 Date클래스 생성시 주소값을 지정하면 그 주소에 현재 시간을 밀리세컨드로 리턴되어 저장되고, 주소를 지정하지 않으면 일시적으로 현재시간이 리턴되어 시간생성
